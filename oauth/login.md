@@ -12,7 +12,7 @@ Login
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="X-XSRF-TOKEN" type="string" required=false %}
+{% api-method-parameter name="X-XSRF-TOKEN" type="string" required=true %}
 XSRF-TOKEN
 {% endapi-method-parameter %}
 
