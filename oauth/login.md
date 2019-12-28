@@ -82,3 +82,79 @@ Could not find a cake matching this query.
 
 
 
+{% api-method method="post" host="https://accounts.launcher-website-prod07.ol.epicgames.com" path="/register/doLauncherRegister" %}
+{% api-method-summary %}
+Register
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authentication" type="string" required=true %}
+Token type + Authentication token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="redirectUrl" type="string" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="country" type="string" required=true %}
+Country of the Account
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="name" type="string" required=true %}
+FirstName of the Account
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="lastName" type="string" required=true %}
+LastName of the Account
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="displayName" type="string" required=true %}
+DisplayName of the Account
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="email" type="string" required=true %}
+Email of the Account
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="password" type="string" required=true %}
+Password of the Account
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="g-recaptcha-response" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="termsAgree" type="string" required=true %}
+`yes`
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="register" type="string" required=true %}
+`sign in`
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+
