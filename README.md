@@ -1,1 +1,2 @@
-# EG-Docs
+# Initial page
+
