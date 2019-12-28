@@ -178,7 +178,7 @@ Password of the Account
 
 
 
-{% api-method method="get" host="" path="" %}
+{% api-method method="get" host="https://accounts.launcher-website-prod07.ol.epicgames.com" path="/login/doTwoFactor?client\_id=client\_id" %}
 {% api-method-summary %}
 two factor
 {% endapi-method-summary %}
