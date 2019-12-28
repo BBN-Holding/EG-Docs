@@ -94,14 +94,34 @@ Register
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
+{% api-method-parameter name="X-XSRF-TOKEN" type="string" required=false %}
+X-XSRF-TOKEN
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="Authentication" type="string" required=true %}
 Token type + Authentication token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="redirectUrl" type="string" required=false %}
+{% api-method-parameter name="fromForm" type="string" required=true %}
+`yes`
+{% endapi-method-parameter %}
 
+{% api-method-parameter name="location" type="string" required=true %}
+`/location`
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="authType" type="string" required=true %}
+`null`
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="client\_id" type="string" required=true %}
+client\_id
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="redirectUrl" type="string" required=true %}
+`https://accounts.launcher-website-prod07.ol.epicgames.com/login/showPleaseWait?client_id=client_id&rememberEmail=false`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="country" type="string" required=true %}
@@ -157,4 +177,36 @@ Password of the Account
 {% endapi-method %}
 
 
+
+{% api-method method="get" host="" path="" %}
+{% api-method-summary %}
+two factor
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
